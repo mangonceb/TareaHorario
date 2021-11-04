@@ -26,6 +26,8 @@ function recogerDatos() {
     //Comprobación de nombres para no guardar nombres equívocos
     if (nombreProf.toUpperCase()!=="FERNANDO" &&  nombreProf.toUpperCase()!=="ANA GLORIA" && nombreProf.toUpperCase()!="DANIEL"  && nombreProf.toUpperCase()!="MARIAN"){
         alert("Nombre no correcto")
+    }else if (asignatura.toUpperCase()!=="DWES" &&  asignatura.toUpperCase()!=="DWEC" && asignatura.toUpperCase()!="DI"  && asignatura.toUpperCase()!="DAW"){
+        alert("Asignatura no correcta")
     }else{
     //Creamos una variable objeto con los datos introducidos
     var horarioProf = new horarioProfesor (nombreProf,asignatura,diasSeleccion,horaSeleccion);
